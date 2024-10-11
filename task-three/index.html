@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BabylonJS & Colyseus Multiplayer Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://unpkg.com/colyseus.js@0.14.0"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="multiplayerGame" ng-controller="GameController">
+    <div id="canvas-container">
+      <canvas id="renderCanvas"></canvas>
+    </div>
+    <div id="controls">
+      <button ng-click="createShape()">Create Shape</button>
+    </div>
+  </body>
+</html>
